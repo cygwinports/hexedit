@@ -1,6 +1,6 @@
 NAME="hexedit"
 VERSION=1.2.13
-RELEASE=1
+RELEASE=2
 CATEGORY="Editors"
 SUMMARY="Hexidecimal file viewer and editor"
 DESCRIPTION="hexedit shows a file both in ASCII and in hexadecimal. The file
