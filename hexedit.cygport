@@ -1,0 +1,24 @@
+NAME="hexedit"
+VERSION=1.2.13
+RELEASE=1
+CATEGORY="Editors"
+SUMMARY="Hexidecimal file viewer and editor"
+DESCRIPTION="hexedit shows a file both in ASCII and in hexadecimal. The file
+can be a device as the file is read a piece at a time. You can modify the file
+and search through it."
+HOMEPAGE="http://rigaux.org/hexedit.html"
+SRC_URI="http://rigaux.org/hexedit-${VERSION}.src.tgz"
+SRC_DIR="hexedit"
+
+src_compile() {
+	lndirs
+	cd ${B}
+	cygconf
+	cygmake
+}
+
+src_install() {
+	cd ${B}
+	dobin hexedit.exe
+	doman hexedit.1
+}
